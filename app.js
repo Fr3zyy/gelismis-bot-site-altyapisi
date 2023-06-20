@@ -95,7 +95,6 @@ app.listen(port, () => {
 })
 client.on('ready', () => {
   console.log('Bot hazır.');
-  // Kanal sayısını almak için kod buraya gelebilir.
 });
 
 client.login(conf.botToken);
