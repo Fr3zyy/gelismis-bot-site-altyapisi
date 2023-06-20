@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('include/header.ejs') %>
+</head>
+
+<body class="bg-gray-900 overflow-hidden">
+
+
+  <div class="flex justify-center items-center" style="height: 100vh;">
+    <div class="flex justify-center">
+      <div class="bg-gray-800 rounded-lg shadow-lg p-8">
+        <div class="flex flex-col items-center mb-4">
+          <div class="text-gray-600 text-center">
+            <h2 class="text-2xl font-bold text-white">Bot İstatistikleri</h2>
+            <h2 class="text-1xl font-bold text-white">
+              <%=botName%>
+            </h2>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="text-center">
+            <h3 class="text-lg font-semibold text-white">Toplam Kullanıcı</h3>
+            <p class="text-slate-300"><%- bot.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString() %></p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-lg font-semibold text-white">Toplam Sunucu</h3>
+            <p class="text-slate-300"><%= bot.guilds.cache.size %></p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-lg font-semibold text-white">Toplam Kanal</h3>
+            <p class="text-slate-300"><%- bot.channels.cache.size %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      
+      
+
+</body>
+
+</html>

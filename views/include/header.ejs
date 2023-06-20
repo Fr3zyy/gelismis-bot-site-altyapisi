@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style>
+      .navbar {
+        background-color: #1f2937;
+      }
+
+      .navbar a {
+        color: #fff;
+      }
+
+      .hero {
+        background-color: #1f2937;
+        color: #fff;
+      }
+
+      @media (max-width: 640px) {
+        .hero {
+          padding: 6rem 1rem;
+        }
+      }
+
+  ::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6b7280;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d1d5db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #e5e7eb;
+}
+</style>
+
+
+    <title><%=botName%> | Güncel Bot</title>
+</head>
+<body>
+          <!-- Navbar Start -->
+  <nav class="bg-gray-800">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="flex items-center">
+          <span class="text-white text-lg font-semibold"><%=botName%></span>
+        </div>
+        <div class="hidden md:block">
+          <a href="/" class="text-gray-300 hover:text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium">Anasayfa</a>
+          <a href="/komutlar" class="text-gray-300 hover:text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium">Komutlar</a>
+          <a href="/hakkimizda" class="text-gray-300 hover:text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium">Hakkımızda</a>
+          <a href="/stats" class="text-gray-300 hover:text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium">İstatistik</a>
+          <a href="/oneri" class="text-gray-300 hover:text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium ">Öneri</a>
+          <a href="/discord" class="text-gray-300 hover:text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium">Discord Sunucusu</a>
+          <a href="/invite" class="text-gray-300 hover:text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium ">Botu Ekle</a>
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+</body>
+
+
+</html>
